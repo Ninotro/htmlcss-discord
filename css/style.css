@@ -320,10 +320,20 @@ Footer {
 }
 
 #sottofooter{
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    
+    background-color: black;
+    align-items: center;
     
 }
+
+.loghi i {
+    height: 30px;
+    
+    margin-right: 5px;
+}
+
+
