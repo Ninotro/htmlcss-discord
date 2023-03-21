@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 10px;
     
 }
 /* regole di debug */
@@ -15,12 +16,12 @@
 header {
     padding-left: 10%;
     padding-right: 10%;
-    min-height: 50px;
+    min-height: 30px;
     background-color: #255EE9; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-     padding-bottom: 20px;
+     padding-bottom: 10px;
     
     
 
@@ -74,13 +75,24 @@ button {
     display: inline-block;
     background-color: white;
     border-radius: 50px;
-    height: 35px;
+    height: 25px;
     padding-left: 15px;
     padding-right: 15px;
     border: 1px white solid;
     
    
 } 
+
+.blue {
+    display: inline-block;
+    background-color:#628CF7;
+    border-radius: 50px;
+    height: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px #628CF7;
+    color: white;
+}
 
 #button1 {
     margin-top: 20px;
@@ -100,24 +112,30 @@ button {
         border: 1px black solid;
         margin-left: 10px;
     }
-/* jumbotron */
+
+    #buttons-line {
+        margin-top: 40px;
+    } 
+    /* jumbotron */
 #jumbotron {
     
     background-color: #255EE9;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     padding-left: 28%;
     padding-right: 28%;
-    padding-bottom: 60px;
-    line-height: 20px;
-    font-size: 12px;
+    padding-bottom: 50px;
+    line-height: 15px;
+    font-size: 10px;
     font-weight: 500;
     color: white;
     background-image: url(../img/jumbo.png);
-    background-size: cover;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
 
 
 }
@@ -127,49 +145,133 @@ button {
 }
 
 #title-jumbotron {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
 }
 /* corpo centrale */
 .paragrafi {
-    background-color: pink;
-    height: 300px;
-    padding-left: 10%;
-    padding-right: 10%;
+   
+    height: 250px;
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    
+    
+    
 }
 
-.img {
-    background-color: azure;
-    width: 50%;
-    height: 60%;
-
-
+.paragrafi-2 {
+    
+   
+        height: 250px;
+        padding-left: 15%;
+        padding-right: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color:  #F6F6F6;
+        
+        
+    
 }
+
+
+
+
+.img { 
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+
+    }
+
+    .prima { background-image: url(../img/item1.svg);
+        
+        margin-left: 40px;
+
+    }
+
+    .seconda {
+        background-image: url(../img/item2.svg);
+
+        
+    }
+    
+    .terza {
+        background-image: url(../img/item3.svg);
+        margin-left: 40px;
+    }
+   
+
+    h2 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+   .text-paragraph {
+        line-height: 20px;
+        font-size: 10px;
+    }
 .paragrafo{
-    background-color: blueviolet;
-    width: 40%;
+    
+    width: 50%;
+    height: 100%;
+    margin-left :40px;
+    margin-top: 30px;
+    
+    
+    
 }
 
-#paragrafo-finale {
+.title-paragraph {margin-bottom:  30px;}
+
+ #paragrafo-finale {
     margin-bottom: 50px;
-    height: 300px;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: chocolate;
+    height: 400px;
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
 
-    
-    align-items:center;
-
+   
 }
 .immagine {
-    background-color: azure;
-    width: 50%;
-    height: 60%;
+    background-image: url(../img/item4-big.svg);
+    width: 400px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#stars {
+    background-image: url(../img/stars.svg);
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 12px;
+    
+}
+
+#paragrafo-finale h2 {
+    margin-bottom: 30px;
 }
 /* inizio footer */
 Footer {
@@ -177,13 +279,41 @@ Footer {
     height: 250px;
 }
 
+#structure-footer h2 { 
+    color: #628CF7;
+
+}
+
+#structure-footer h3 { 
+    color: #628CF7;
+    margin-bottom: 10px;
+
+}
+
 #structure-footer {
     margin-left: 10%;
     margin-right: 10%;
-    border-bottom: 3px solid yellow; 
+    border-bottom: 2px solid #628CF7;
     color: white;   
     display: flex;
     justify-content: space-between;
+}
+
+.social {width: 30%;}
+
+#lingua {
+   display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#italia {
+    height: 15px;
+    margin-right: 5px;
+}
+.list {
+    margin-top: 10px;
 }
 .list-footer {
     padding-bottom: 10px;
